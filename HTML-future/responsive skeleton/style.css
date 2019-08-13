@@ -1,0 +1,59 @@
+.page {
+    width: 70% ;
+     margin-left: auto ;
+    margin-right: auto;
+  }
+  .header {
+        display: flex ;
+        background-color: red ;
+        border: 3px solid ;
+        height: 100px;
+       
+  }
+  .logo{
+    flex: 30% ; 
+    background-color: blue;
+  }
+  .banner{
+    flex: 70%;
+  }
+  .nav{
+    display: flex;
+    border: 1px solid blue;
+    margin: 15px auto;
+  }
+  .navbar { 
+    flex : 10%;
+    height: 30px;
+    border: 1px solid black;
+  }
+  
+  .body {
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-column-gap: 10px;
+  } 
+  .content {
+    border: 5px solid green;
+    height: 180px;
+  }
+  
+  .sidebar {
+      border: 5px solid green;
+  }
+    
+   .footer {
+     background-color: lightblue;
+     height: 100px;
+     text-align: center;
+  }
+       
+  @media screen and (max-width:576px) {
+    .page{width:100%}
+    .logo {display: none }
+    .banner{flex: 100% }
+    .nav{display:block}
+    .navbar {flex:100%}
+    .body{ display: block}
+  }
+  

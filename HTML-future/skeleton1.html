@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<meta charset="utf-8"/>
+<meta name="Lê Nam Trân" content="CV of me" />
+<meta description="to test my web creation skills"/>
+
+
+<head>
+    <title> Lê Nam Trân CV </title>
+    <link rel"stylesheet" type="text/css" href"style.css" />
+
+  <style>
+    .page {
+  width: 960px ;
+   margin-left: auto ;
+  margin-right: auto;
+}
+.header {
+      display: flex ;
+      background-color: red ;
+      border: 3px solid ;
+      height: 100px;
+     
+}
+.logo{
+  flex: 30% ; 
+  background-color: blue;
+}
+.banner{
+  flex: 70%;
+}
+.nav{
+  display: flex;
+}
+.navbar { 
+  width: 900px;
+  margin: 15px auto;
+  height: 30px;
+  border: 1px solid black;
+}
+
+.body {
+  display :grid;
+  grid-template-columns: repeat(3,1fr);
+  grid-column-gap: 10px;
+} 
+.content {
+  border: 5px solid green;
+   height: 180px;
+  grid-column-gap: 10px;
+}
+
+.sidebar {
+    border: 5px solid green;
+}
+  
+ .footer {
+   background-color: lightblue;
+   height: 100px;
+   text-align: center;
+}
+     
+    </style>
+</head>
+
+<body>
+  <!--Phần #header-->
+  <section class="page" >
+ <section class="container">
+    <div class="header">
+      <div class="logo"></div>
+      <div class="banner"></div>
+    </div>
+</section>
+    <!--Kết thúc #header-->
+    <div class= nav>
+      <div class=navbar></div>
+      <div class=navbar></div>
+      <div class=navbar></div>
+      <div class=navbar></div>
+      <div class=navbar></div>
+      <div class=navbar></div>
+      <div class=navbar></div>
+      <div class=navbar></div>
+    </div>
+    
+    <!--Phần nội dung-->
+  <section class="body">
+    <div class="content">
+      <p>Nội dung bài viết ở đây.</p>
+    </div>
+    <div class="content">
+      <p>Nội dung bài viết ở đây.</p>
+    </div>
+    <!--Kết thúc nội dung-->
+
+    <!--Phần sidebar-->
+    <div class="sidebar">
+      <p>Đây là sidebar</p>
+    </div>
+    <!--Kết thúc sidebar-->
+    </section>
+
+    <!--Phần chân trang-->
+    <div class="footer">
+      <p>Thông tin trang/ Liên hệ </p>
+    </div>
+                   
+    <!--Kết thúc chân trang-->
+</section>  
+
+</body>
+
+</html>
