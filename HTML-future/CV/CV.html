@@ -4,7 +4,11 @@
     <meta charset="UTF-8">
     <title>Skeleton of website</title>
     <link rel=stylesheet href="css/css.css" >
-
+      <script
+          src="https://code.jquery.com/jquery-3.4.1.js"
+          integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU="
+          crossorigin="anonymous">
+      </script>
 </head>
 <body>
 
@@ -40,6 +44,7 @@
   </section>
   <!--Kết thúc navigation bar-->
 
+
   <!--Phần nội dung-->
 <section id="wrap">
   <div id="wrapper1">
@@ -59,6 +64,7 @@
     </div>
   </div>
 
+
   <div id="wrapper2">
     <div class="content2"><h1>Học vấn</h1></div>
     <div class="info2">
@@ -67,6 +73,7 @@
       </p>
     </div>
   </div>
+
 
   <div id="wrapper3">
     <div class="content3"><h1>Mục tiêu nghề nghiệp</h1></div>
@@ -79,17 +86,17 @@
 
   <div id="wrapper4">
     <div class="content4"><h1>Kỹ năng</h1>
-      <img src="Communist_haiku.png" alt="123">
     </div>
     <div class="info4">
       <p>Giao tiếp: 4/5 .<br/>
         Tư duy phản biện: 4/5.<br/>
         Photoshop: 4/5.<br/>
-        Tiếng Anh: 4/5  .<br/>
+        Tiếng Anh: 4/5 .<br/>
       </p>
     </div>
   </div>
 </section>
+
 
   <!--Phần chân trang-->
   <div id="contact">
@@ -101,7 +108,20 @@
   </div>
   <!--Kết thúc chân trang-->
 </section>
-</body>
 
+  <script>
+  let fullHeight = $(document).height();
+  let body = $('body');
+  $(window).scroll(function(){
+    if($(window).scrollTop() >= fullHeight/3){
+      $(body).css('background-image','url(./lenin-lenin.jpg)');
+    }
+    else if($(window).scrollTop() <= fullHeight/4){
+      $(body).css('background-image','url(./Communist_haiku.png)');
+    }
+  })
+</script>
+
+</body>
 
 </html>
